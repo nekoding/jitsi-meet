@@ -54,7 +54,7 @@ var interfaceConfig = {
     DEFAULT_BACKGROUND: '#474747',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
     DEFAULT_LOGO_URL: 'images/watermark.svg',
-    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster',
+    DEFAULT_REMOTE_DISPLAY_NAME: 'User',
     DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
@@ -161,7 +161,7 @@ var interfaceConfig = {
     // has a suboptimal experience. Browsers which are not listed as optimal or
     // unsupported are considered suboptimal. Valid values are:
     // chrome, chromium, edge, electron, firefox, nwjs, opera, safari
-    OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron', 'safari' ],
+    OPTIMAL_BROWSERS: ['chrome', 'chromium', 'firefox', 'nwjs', 'electron', 'safari'],
 
     POLICY_LOGO: null,
     PROVIDER_NAME: 'Jitsi',
@@ -174,7 +174,7 @@ var interfaceConfig = {
     RECENT_LIST_ENABLED: true,
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
-    SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
+    SETTINGS_SECTIONS: ['devices', 'language', 'moderator', 'profile', 'calendar'],
 
     /**
      * Specify which sharing features should be displayed. If the value is not set
@@ -245,7 +245,7 @@ var interfaceConfig = {
      * How many columns the tile view can expand to. The respected range is
      * between 1 and 5.
      */
-    // TILE_VIEW_MAX_COLUMNS: 5,
+    TILE_VIEW_MAX_COLUMNS: 4,
 
     /**
      * Specify Firebase dynamic link properties for the mobile apps.

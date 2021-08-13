@@ -76,7 +76,7 @@ type Props = {
  * Implements a custom Jitsi Modal that doesn't use the built in native
  * Modal component of React Native.
  */
-class JitsiModal extends PureComponent<Props> {
+class JitsiModalCustom extends PureComponent<Props> {
     static defaultProps = {
         position: 'bottom'
     };
@@ -168,4 +168,4 @@ function _mapStateToProps(state, ownProps): $Shape<Props> {
     };
 }
 
-export default connect(_mapStateToProps)(JitsiModal);
+export default connect(_mapStateToProps)(JitsiModalCustom);

@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { translate } from '../../../base/i18n';
-import { JitsiModal } from '../../../base/modal';
+import { JitsiModal, JitsiModalCustom } from '../../../base/modal';
 import { connect } from '../../../base/redux';
 import { closeChat } from '../../actions.any';
 import { CHAT_VIEW_MODAL_ID } from '../../constants';
@@ -39,17 +39,17 @@ class Chat extends AbstractChat<Props> {
      */
     render() {
         return (
-            <JitsiModal
-                headerProps = {{
+            <JitsiModalCustom
+                headerProps={{
                     headerLabelKey: 'chat.title'
                 }}
-                modalId = { CHAT_VIEW_MODAL_ID }
-                onClose = { this._onClose }>
+                modalId={CHAT_VIEW_MODAL_ID}
+                onClose={this._onClose}>
 
-                <MessageContainer messages = { this.props._messages } />
+                <MessageContainer messages={this.props._messages} />
                 <MessageRecipient />
-                <ChatInputBar onSend = { this._onSendMessage } />
-            </JitsiModal>
+                <ChatInputBar onSend={this._onSendMessage} />
+            </JitsiModalCustom>
         );
     }
 
